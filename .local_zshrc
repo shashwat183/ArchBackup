@@ -1,0 +1,34 @@
+# vim:ft=zsh
+
+# # Set neovide as default editor
+# export EDITOR='neovide'
+#
+# PATH VARIABLES
+GOLIBBIN=$HOME/GoProjects/golib/bin
+ROFI=$HOME/.config/rofi/bin:$PATH
+GOPATH=$HOME/GoProjects/golib:$HOME/GoProjects/code
+M2_HOME="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"
+MYSQL_HOME=/usr/local/mysql
+POSTGRES13=/Applications/Postgres.app/Contents/Versions/13/bin/
+
+
+PATH=$PATH:$GOPATH/bin:$M2_HOME/bin:$MYSQL_HOME/bin:$POSTGRES13:$ROFI:$GOLIBBIN
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH
+
+alias cn='clear && pfetch'
+# alias cl='clear'
+alias neo='devour neovide --nofork'
+alias idea='devour idea'
+alias code='devour code --verbose'
+alias cdgo='cd ~/Code/Go/'
+alias cdpy='cd ~/Code/Python/'
+alias cdjava='cd ~/Code/Java/'
+alias cdjs='cd ~/Code/JavaScript/'
+alias cdts='cd ~/Code/TypeScript/'
+alias cdopen='cd ~/Code/OpenSource/'
+# neofetch

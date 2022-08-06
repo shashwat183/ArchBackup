@@ -1,0 +1,12 @@
+# vim:ft=zsh
+# Automatically Start XServer with Qtile if on tty1
+if [[ "$(tty)" = "/dev/tty1" ]]
+then
+  startx $HOME/.config/xinit/.qtile_xinitrc
+fi
+
+# Automatically Start XServer with XMonad if on tty2
+if [[ "$(tty)" = "/dev/tty2" ]]
+then
+  startx $HOME/.config/xinit/.xmonad_xinitrc
+fi
